@@ -1,3 +1,4 @@
+package client;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -92,7 +93,7 @@ public class Client {
             System.err.print("Enter your username for the group chat : ");
             String username = scanner.nextLine();
             System.out.println();
-            Socket socket = new Socket("localhost",1234);
+            Socket socket = new Socket("localhost",5555);
             Client client = new Client(socket, username);
             /**
              * This two methods are blocking code but they are running on separate Threads

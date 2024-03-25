@@ -1,3 +1,5 @@
+package server;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -45,8 +47,8 @@ public class Server {
     }
 
     public static void main(String[] args) throws IOException {
-        // We create a server listing for client on port 1234
-        ServerSocket serverSocket = new ServerSocket(1234);
+        // We create a server listing for client on port 5555
+        ServerSocket serverSocket = new ServerSocket(5555);
         Server server = new Server(serverSocket);
         server.startServer();
     }
